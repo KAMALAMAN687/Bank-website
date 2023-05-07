@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+.lemon{
+    border: 2px solid peru;
+}
+
+.content{
+    display:block;
+    animation: moveup  1s linear forwards; 
+}
+.slight{
+    transition:all 0.2s ease;
+}
+@keyframes moveup{
+    0% {
+        margin-top:40px;
+        opacity:0;
+    }
+    50%{
+        margin-top:20px;
+        opacity:0.1;
+    }
+    100%{
+        margin-top:0px;
+        opacity:1;
+    }
+}
